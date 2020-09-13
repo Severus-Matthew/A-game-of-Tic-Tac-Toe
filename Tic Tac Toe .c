@@ -22,7 +22,7 @@ int main() {
     int r1;
     int r2;
     int aj = 0;
-    
+
     void state() {
     printf("\t\t\t %c \t | \t %c \t | \t %c \t | \n \t\t-----------------------------------------------------\n", arr[0][0], arr[0][1], arr[0][2]);
     printf("\t\t\t %c \t | \t %c \t | \t %c \t | \n \t\t-----------------------------------------------------\n", arr[1][0], arr[1][1], arr[1][2]);
@@ -34,7 +34,7 @@ void movep1(int r1) {
             arr[0][0] = P1;
         }
         else {
-            printf("This postion is already marked!! YOU LOSE THIS CHANCE");
+            printf("This postion is already marked!! YOU LOSE THIS CHANCE!! LOL");
         }
     }
     else if (r1 == 2) {
@@ -109,7 +109,7 @@ void movep1(int r1) {
 }
 
 void movep2(int r2) {
-    
+
     if (r2 == 1) {
         if (arr[0][0] == ' ') {
             arr[0][0] = P2;
@@ -188,26 +188,26 @@ void movep2(int r2) {
         printf("invalid input! YOU LOSE THIS CHANCE");
     }
 }
-    
+
 void winp2() {
       if ((arr[0][0] == P2 && arr[0][1] == P2 && arr[0][2] == P2) || (arr[1][0] == P2 && arr[1][1] == P2 && arr[1][2] == P2) || (arr[2][0] == P2 && arr[2][1] == P2 && arr[2][2] == P2) || (arr[0][0] == P2 && arr[1][1] == P2 && arr[2][2] == P2) || (arr[0][2] == P2 && arr[1][1] == P2 && arr[2][0] == P2) || (arr[0][0] == P2 && arr[1][0] == P2 && arr[2][0] == P2) || (arr[0][1] == P2 && arr[1][1] == P2 && arr[2][1] == P2) || (arr[0][2] == P2 && arr[1][2] == P2 && arr[2][2] == P2)) {
             printf("Player 2 WINS !!!");
             aj = 1;
-            
+
         }
-     
-} 
+
+}
 
 void winp1() {
     if ((arr[0][0] == P1 && arr[0][1] == P1 && arr[0][2] == P1) || (arr[1][0] == P1 && arr[1][1] == P1 && arr[1][2] == P1) || (arr[2][0] == P1 && arr[2][1] == P1 && arr[2][2] == P1) || (arr[0][0] == P1 && arr[1][1] == P1 && arr[2][2] == P1) || (arr[0][2] == P1 && arr[1][1] == P1 && arr[2][0] == P1) || (arr[0][0] == P1 && arr[1][0] == P1 && arr[2][0] == P1) || (arr[0][1] == P1 && arr[1][1] == P1 && arr[2][1] == P1) || (arr[0][2] == P1 && arr[1][2] == P1 && arr[2][2] == P1)) {
         printf("Player 1 WINS !!!");
         aj = 1;
-        
+
     }
-  
+
 }
-    
-    
+
+
 
 
     printf("Please Enter Name of Player 1 \n");
@@ -260,10 +260,8 @@ void winp1() {
               winp2();
            }
         }
-      return 0;  
+      return 0;
     }
-    
-    
+
+
 }
-
-
